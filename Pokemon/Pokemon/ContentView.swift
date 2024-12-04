@@ -32,7 +32,7 @@ struct ContentView: View {
                   .frame(width: 300, height: 100)
                   .position(x: 50, y: 50)
                   .clipShape(Circle())
-                AsyncImage(url: URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/\(i+1).png"))
+                AsyncImage(url: URL(string: pokemonData.pokemonList[i].sprites.front_default))
               }
             }
           }
